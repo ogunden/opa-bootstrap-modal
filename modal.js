@@ -8,7 +8,7 @@
 }
 
 ##register hide_modal: Dom.private.element -> void
-##args(hom)
+##args(dom)
 {
   dom.modal('hide');
   return js_void;
