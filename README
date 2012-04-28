@@ -1,0 +1,12 @@
+To compile:
+
+  make
+
+to run:
+
+  ./modal_test.exe
+
+the question:
+
+  why do the dom modal calls result in Javascript errors:
+    Uncaught TypeError: Object [object Object] has no method 'modal'
