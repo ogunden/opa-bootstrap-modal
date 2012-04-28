@@ -39,13 +39,13 @@ testmodal() =
   headers =
     <>
       <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
-      <script src="/js/jquery-1.7.1.min.js"/>
-      <script src="/js/bootstrap-modal.js"/>
-      <script src="/js/bootstrap-transition.js"/>
     </>
   Resource.full_page(
     "foo", html, headers, {success}, []
   )
+
+do Resource.register_external_js("/js/bootstrap-modal.js")
+do Resource.register_external_js("/js/bootstrap-transition.js")
 
 server =
   css_dir = Server.resource_map(@static_resource_directory("css"))
