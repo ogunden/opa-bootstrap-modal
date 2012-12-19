@@ -1,15 +1,19 @@
-##extern-type Dom.private.element
+/**
+ * @externType Dom.private.element
+ */
 
-##register show_modal: Dom.private.element -> void
-##args(dom)
-{
+/**
+ * @register {Dom.private.element -> void}
+ */
+function show_modal(dom) {
   dom.modal('show');
   return js_void;
 }
 
-##register hide_modal: Dom.private.element -> void
-##args(dom)
-{
+/**
+ * @register {Dom.private.element -> void}
+ */
+function hide_modal(dom) {
   dom.modal('hide');
   return js_void;
 }
